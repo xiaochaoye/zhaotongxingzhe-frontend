@@ -8,8 +8,12 @@
         @cancel="onCancel"
     />
   </form>
+  <van-notice-bar
+      left-icon="volume-o"
+      text="暂只支持性别和年级搜索"
+  />
   <van-divider content-position="left">已选标签</van-divider>
-  <div v-if="activeIds.length === 0">请选择标签,暂只支持性别和年级</div>
+  <div v-if="activeIds.length === 0">请选择标签</div>
   <van-row gutter="16">
     <van-col v-for="tag in activeIds">
       <van-tag closeable type="primary" @close="doClose(tag)">
