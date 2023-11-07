@@ -10,5 +10,6 @@ export type TeamType = {
     password?: string,
     status: number,
     createTime:Date,
-    createUser:string
+    createUser:string,
+    hasJoinNum?:number
 };

@@ -8,7 +8,7 @@
             </template>
             <template #bottom>
                 <div>
-                    {{ '最大人数：' + team.maxNum }}
+                    {{ '队伍人数：' + team.hasJoinNum + '/' + team.maxNum }}
                 </div>
                 <div v-if="team.expireTime">
                     {{ '过期时间：' + team.expireTime }}
