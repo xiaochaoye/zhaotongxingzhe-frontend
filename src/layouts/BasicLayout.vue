@@ -35,7 +35,7 @@ const onClickRight = () => {
   router.push('/search');
 };
 
-const DEFAULT_TITLE = '伙伴匹配';
+const DEFAULT_TITLE = '找同行者';
 const title = ref(DEFAULT_TITLE);
 
 /**
